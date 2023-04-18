@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення в кав’ярні</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Доставка продукції</h1>
+    <form id="order-form">
+        <label for="name">ПІБ</label>
+        <input type="text" id="name" required>
+
+        <label for="address">Адреса</label>
+        <input type="text" id="address" required>
+
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required>
+
+        <label for="coffee-type">Яку каву хочете</label>
+        <textarea id="coffee-type" required></textarea>
+
+        <label for="quantity">Скільки штук</label>
+        <input type="number" id="quantity" required>
+
+        <button type="submit">Замовити</button>
+    </form>
+
+    <table id="orders-table">
+        <thead>
+            <tr>
+                <th>ПІБ</th>
+                <th>Адреса</th>
+                <th>Телефон</th>
+                <th>E-mail</th>
+                <th>Тип кави</th>
+                <th>Кількість</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
